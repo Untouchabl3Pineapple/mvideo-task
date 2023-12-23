@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS rates
+(
+	id 				SERIAL PRIMARY KEY,
+	usd 			REAL NOT NULL,
+	eur 			REAL NOT NULL,
+	insert_date 	TIMESTAMP DEFAULT NOW()
+);
